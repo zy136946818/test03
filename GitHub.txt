@@ -1,0 +1,26 @@
+git clone	克隆分区
+git add		将内容从工作目录添加到暂存区
+git commit
+字面解释的话，git commit -m用于提交暂存区的文件；git commit -am用于提交跟踪过的文件
+git status	查看仓库状态
+git reset	把当前版本回退到上一个版本
+git branch	查看分支
+
+git diff：是查看 workspace（工作区） 与 index（暂存区） 的差别的。 
+git diff --cached：是查看 index（暂存区） 与 local repositorty（本地仓库） 的差别的。 
+git diff HEAD：是查看 workspace 和 local repository 的差别的。（HEAD 指向的是 local repository 中最新提交的版本）
+
+注：git diff 后跟两个参数，如果只写一个参数，表示默认跟 workspace中的代码作比较。git diff 显示的结果为 第二个参数所指的代码在第一个参数所指代码基础上的修改。如，git diff HEAD 表示 workspace 在 最新commit的基础上所做的修改
+git merge	把一个分支或或某个commit的修改合并到现在的分支上。
+git reset	撤销这些提交
+git pull	取回远程主机某个分支的更新，再与本地的指定分支合并。
+git pull <远程主机名> <远程分支名>:<本地分支名>
+git push	将本地分支的更新，推送到远程主机。
+git push <远程主机名> <本地分支名>:<远程分支名>
+
+
+
+
+
+
+clone  add commit status branch diff merge reset pull push
